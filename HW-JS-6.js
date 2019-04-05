@@ -216,4 +216,4 @@ function getAdultNames(users) {
   });
   return AdultNames.join(", ");
 }
-usersToString(users); // 'John 19, Luce 18'
+getAdultNames(users); // 'John 19, Luce 18'
