@@ -141,15 +141,18 @@ const users = [{
 ];
 
 function usersToObject(users) {
-  /* your code */
+  var objUsers = [new Set([users])];
+  return objUsers;
 }
-usersToObject(users)
+usersToObject(users);
 // {
 //  1: { id: 1, name: 'John', birthday: '1999-2-12' },
 //  2: { id: 2, name: 'Bill', birthday: '1999-1-19' },
 //  3: { id: 3, name: 'Carol', birthday: '1999-3-11' },
 //  4: { id: 4, name: 'Luce', birthday: '1999-2-22' }
 // };
+
+
 // A function returns array of users that have birthdays in a specific month.
 const users = [{
     name: 'John',
@@ -170,11 +173,20 @@ const users = [{
 ];
 
 function filterUsersByMonth(users, month) {
-  /* your code */
+users.forEach(function(item, index){
+    let newDate = new Date(item.birthday);
+    if (newDate.getMonth() + 1 === month){
+      let filterUsers = [item];
+	console.log(filterUsers);
+    }
+  });
 }
-filterUsersByMonth(users, 0) // [{ name: 'Bill', birthday: '1999-1-19' }]
+filterUsersByMonth(users,2);  // [{ name: 'Bill', birthday: '1999-1-19' }]
+
+
 // A function returns name and age of users separated by comma that are older than 18.
-const users = [{
+const users = [
+  {
     name: 'John',
     birthday: '1999-6-12'
   },
@@ -193,6 +205,15 @@ const users = [{
 ];
 
 function getAdultNames(users) {
-  /* your code */
+  let AdultNames = [];
+  let currectYear = new Date().getFullYear();
+  let usersYears = users.forEach((person) => {
+    let personYear = new Date(person.birthday).getFullYear();
+    let usersAge = currectYear - personYear;
+    if (usersAge >= 18) {
+      AdultNames.push(`${person.name} ${usersAge}`);
+    }
+  });
+  return AdultNames.join(", ");
 }
-usersToString(users) // 'John 19, Luce 18'
+usersToString(users); // 'John 19, Luce 18'
