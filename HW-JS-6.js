@@ -1,4 +1,4 @@
-/*jshint esversion: 6 */
+
 // A function which prints str after n seconds.
 
 function printTimeout(str, n) {
@@ -9,7 +9,7 @@ function printTimeout(str, n) {
 }
 printTimeout('Hello', 10); // hello will appear after 10secs in console.
 
-// A function which returns sum of all numbers from 1 to n using recu`rsion.
+// A function which returns sum of all numbers from 1 to n using recursion.
 function sumAll(n, sum = 0) {
   sum += n;
   if (n > 0) {
@@ -35,7 +35,7 @@ function bombTimer(str, time) {
   };
   let settingInterval = setInterval(countTime, 1000);
 }
-bombTimer('Boooom', 3);
+bombTimer('Boom', 3);
 
 
 // A function which returns factorial of number using recursion.
@@ -62,7 +62,7 @@ function Boom(str, time) {
   };
   let setTimes = setTimeout(countTime, 1000);
 }
-Boom("Booom", 4);
+Boom("Boom", 4);
 
 // A function which takes an array of numbers and maxNumber,
 // the function returns new array with numbers not higher than maxNumber.

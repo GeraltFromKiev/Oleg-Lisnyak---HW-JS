@@ -78,6 +78,8 @@ function firstAndLastToUpper(str) {
 }
 firstAndLastToUpper('abc') // 'AbC'
 
+
+
 // function which returns true
 // if string contains ironman or cursor or ostap otherwise returns false.The
 // function must be
