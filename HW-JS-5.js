@@ -121,6 +121,6 @@ function fibonacci(n) {
   }
   return b;
 }
-fibonacci(3); // 2
-fibonacci(5); // 5
-fibonacci(7); // 13
+fibonacci(3); //
+fibonacci(5); //
+fibonacci(7); // 

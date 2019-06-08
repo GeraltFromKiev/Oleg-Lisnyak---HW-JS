@@ -1,0 +1,36 @@
+{
+    "workbench.colorCustomizations": {
+        "titleBar.activeBackground": "#1857a4",
+        "titleBar.inactiveBackground": "#1857a499",
+        "titleBar.activeForeground": "#e7e7e7",
+        "titleBar.inactiveForeground": "#e7e7e799",
+        "statusBar.background": "#1857a4",
+        "statusBarItem.hoverBackground": "#1f6fd0",
+        "statusBar.foreground": "#e7e7e7"
+    },
+    "editor.fontLigatures": true,
+    "peacock.affectStatusBar": true
+    {
+        "workbench.colorCustomizations": {
+            "activityBar.background": "#e90b8d",
+            "activityBar.foreground": "#fff",
+            "activityBar.inactiveForeground": "#b5b5b5",
+            "peacock.affectedElements": [
+            "activityBar",
+        ]
+    }
+  },
+      // Configure Gist Id (Environment)
+      "sync.gist": "f4afb48b994bb540b9a6ba64b0f4fddc",
+      // Configure auto upload / download for Github Gist 
+      "sync.autoDownload": true,
+      // Configure extension sync behaviour
+      "sync.autoUpload": true,
+      // Configure force download
+      "sync.forceDownload": true,
+      // Configure quiet sync
+      "sync.quietSync": true,
+      "sync.askGistName": false,
+      "sync.removeExtensions": true,
+      "sync.syncExtensions": true
+}
